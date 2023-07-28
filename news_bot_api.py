@@ -8,15 +8,15 @@ from aiogram import Bot, executor, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 
-ADMIN_ID = '207719126'
-TOKEN = "6011674769:AAEy4WQTrIfFJIIfBl-t4jDfRZ3Ask6ELIo"
-URL = "t.me/aigram3105_bot"
+ADMIN_ID = ''
+TOKEN = ""
+URL = ""
 
 storage = MemoryStorage()
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot, storage=storage)
 
-NEWS_API_KEY='932d7b3475d341ddacc1187d36d1b9d5'
+NEWS_API_KEY=''
 
 async def news_get(message: types.Message):
     count = 0
