@@ -3,7 +3,7 @@ import requests
 from pprint import pprint
 
 
-apikey = 'NVRLNONT7TFKV9W5'
+apikey = ''
 url = 'https://www.alphavantage.co/query?'
 
 
