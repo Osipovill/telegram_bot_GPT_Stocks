@@ -1,4 +1,3 @@
-from pprint import pprint
 from aiogram import Bot, Dispatcher, types, executor
 from aiogram.types import Message
 from parser_data_stock import *
@@ -60,7 +59,7 @@ async def get_symbol_search_(message: types.Message):
 
     try:
         data = get_symbol_search(symbol)
-
+        text = ''
         # Извлечение данных для каждого символа из списка
         for match in data['bestMatches']:
             symbol = match['1. symbol']
@@ -94,7 +93,7 @@ async def get_symbol_search_(message: types.Message):
 async def get_market_status_(message: types.Message):
     try:
         data = get_market_status()
-
+        text = ''
         # Извлечение данных для каждого рынка из списка
         for market in data['markets']:
             current_status = market['current_status']
