@@ -2,6 +2,7 @@ import datetime
 import requests
 from pprint import pprint
 
+# Ссылка на API: https://www.alphavantage.co/documentation/#market-status
 
 apikey = ''
 url = 'https://www.alphavantage.co/query?'
